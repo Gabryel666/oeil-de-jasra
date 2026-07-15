@@ -3,319 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Actualités JDR — 9-15 juillet 2026</title>
+<title>L'Œil de Jasra — Magazine JDR</title>
+<meta http-equiv="refresh" content="0;url=beta-0/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="L'Œil de Jasra — Magazine JDR" />
+<meta property="og:description" content="Le magazine d'actualité JDR de Jasra. Chaque semaine, 15 sources scrutées, des articles développés, des critiques, des podcasts, et tout ce qui fait vibrer le rôliste." />
+<meta property="og:url" content="https://gabryel666.github.io/oeil-de-jasra/" />
+<meta property="og:image" content="https://lefix.di6dent.fr/wp-content/uploads/2026/07/PaizoLogo_une.webp" />
+<meta property="og:site_name" content="L'Œil de Jasra" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="L'Œil de Jasra — Magazine JDR" />
+<meta name="twitter:description" content="Le magazine d'actualité JDR de Jasra." />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,500&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #1a1a2e;
-  --card: #222240;
-  --gold: #e8c88a;
-  --gold-dim: #c9a96e;
-  --text: #e0e0eb;
-  --text-muted: #9999b0;
-  --purple: #c884c8;
-  --green: #7bc89a;
-  --blue: #7ab8e0;
-  --orange: #e8a86a;
-  --border: #2a2a45;
-  --gutter: 24px;
-}
+:root { --bg: #1a1a2e; --gold: #e8c88a; --gold-dim: #c9a96e; --text: #e0e0eb; --text-muted: #9999b0; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Lora', Georgia, serif;
-  line-height: 1.65;
-  padding: 40px 20px;
-}
-.magazine { max-width: 960px; margin: 0 auto; }
-.cover { text-align: center; padding: 100px 20px 60px; border-bottom: 1px solid var(--gold-dim); margin-bottom: 40px; }
-.cover .subtitle { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 24px; }
-.cover h1 { font-size: 48px; font-weight: 600; color: var(--gold); margin-bottom: 12px; line-height: 1.15; }
-.cover .date { font-style: italic; font-size: 16px; color: var(--gold-dim); margin-bottom: 24px; }
-.cover .divider { width: 80px; height: 1px; background: var(--gold-dim); margin: 0 auto 28px; }
-.cover .desc { font-family: 'Inter', sans-serif; font-size: 13px; color: var(--text-muted); margin-bottom: 40px; }
-.cover .toc { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 16px; }
-.cover .toc-line { font-size: 15px; color: var(--text); padding: 4px 0; }
-.cover .toc-line span { color: var(--gold-dim); margin-right: 10px; }
-.section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; margin-top: 48px; }
-.section-header .line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); }
-.section-header .label { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
-.section-header.purple .line { background: linear-gradient(to right, transparent, var(--purple), transparent); }
-.section-header.purple .label { color: var(--purple); }
-.section-header.green .line { background: linear-gradient(to right, transparent, var(--green), transparent); }
-.section-header.green .label { color: var(--green); }
-.section-header.blue .line { background: linear-gradient(to right, transparent, var(--blue), transparent); }
-.section-header.blue .label { color: var(--blue); }
-.section-header.orange .line { background: linear-gradient(to right, transparent, var(--orange), transparent); }
-.section-header.orange .label { color: var(--orange); }
-.article-title { font-size: 30px; font-weight: 700; line-height: 1.2; margin-bottom: 20px; color: #f0f0f8; font-family: 'Lora', Georgia, serif; }
-.article-image { width: 100%; border-radius: 4px; margin-bottom: 6px; display: block; }
-.article-caption { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-muted); text-align: center; margin-bottom: 24px; }
-.columns { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--border); }
-.columns p { margin-bottom: 12px; font-size: 13.5px; line-height: 1.7; text-align: justify; break-inside: avoid; }
-.columns .pullquote { column-span: all; text-align: center; font-style: italic; font-size: 16px; color: var(--gold-dim); padding: 20px 40px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 16px 0 20px; }
-.columns .pullquote.purple-text { color: var(--purple); }
-.columns .pullquote.green-text { color: var(--green); }
-.columns .pullquote.orange-text { color: var(--orange); }
-.article-footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
-.article-footer a { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gold-dim); text-decoration: none; }
-.article-footer a:hover { text-decoration: underline; }
-.game-block { background: var(--card); border-left: 3px solid var(--gold); padding: 20px 24px; margin-bottom: 24px; border-radius: 0 4px 4px 0; }
-.game-block p { font-size: 13.5px; line-height: 1.7; color: var(--text); margin-bottom: 8px; }
-.game-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; display: inline-block; margin-top: 4px; }
-.game-link:hover { text-decoration: underline; }
-.buzz-list { margin: 16px 0; }
-.buzz-item { padding: 12px 16px; margin-bottom: 10px; border-left: 2px solid var(--gold-dim); background: var(--card); border-radius: 0 4px 4px 0; }
-.buzz-item .buzz-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #f0f0f8; margin-bottom: 4px; }
-.buzz-item .buzz-desc { font-size: 12.5px; color: var(--text-muted); margin-bottom: 4px; line-height: 1.5; }
-.buzz-item .buzz-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; }
-.buzz-item .buzz-link:hover { text-decoration: underline; }
-.cf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
-.cf-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
-.cf-card h4 { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--gold); margin-bottom: 6px; }
-.cf-card .cf-stat { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
-.cf-card p { font-size: 12.5px; line-height: 1.6; color: var(--text); margin-bottom: 8px; }
-.cf-card .cf-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; }
-.cf-card .cf-link:hover { text-decoration: underline; }
-.podcast-item { padding: 14px 18px; margin-bottom: 12px; background: var(--card); border-radius: 6px; border: 1px solid var(--border); }
-.podcast-item h4 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; color: var(--purple); margin-bottom: 4px; }
-.podcast-item .pod-meta { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }
-.podcast-item p { font-size: 12.5px; line-height: 1.6; color: var(--text); margin-bottom: 6px; }
-.podcast-item .pod-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; }
-.podcast-item .pod-link:hover { text-decoration: underline; }
-.geek-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
-.geek-item { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
-.geek-item h4 { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--orange); margin-bottom: 6px; }
-.geek-item p { font-size: 12.5px; line-height: 1.6; color: var(--text); margin-bottom: 6px; }
-.geek-item .geek-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; }
-.geek-item .geek-link:hover { text-decoration: underline; }
-.agenda-item { padding: 12px 16px; margin-bottom: 10px; border-left: 3px solid var(--blue); background: var(--card); border-radius: 0 4px 4px 0; }
-.agenda-item .agenda-date { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: var(--blue); margin-bottom: 2px; }
-.agenda-item .agenda-title { font-size: 14px; color: #f0f0f8; margin-bottom: 2px; }
-.agenda-item .agenda-desc { font-size: 12px; color: var(--text-muted); }
-.agenda-item .agenda-link { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--gold-dim); text-decoration: none; }
-.agenda-item .agenda-link:hover { text-decoration: underline; }
-.back-cover { text-align: center; padding: 80px 20px; margin-top: 60px; border-top: 1px solid var(--gold-dim); }
-.back-cover p { font-style: italic; font-size: 18px; color: var(--gold); margin-bottom: 8px; }
-.back-cover .muted { font-family: 'Inter', sans-serif; font-size: 13px; color: var(--text-muted); font-style: normal; }
-@media (max-width: 640px) { .columns { column-count: 1; } .cover h1 { font-size: 32px; } .article-title { font-size: 24px; } .columns .pullquote { font-size: 14px; padding: 16px; } .cf-grid { grid-template-columns: 1fr; } .geek-grid { grid-template-columns: 1fr; } }
+body { background: var(--bg); color: var(--text); font-family: 'Lora', Georgia, serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; padding: 40px 20px; }
+.container { max-width: 600px; }
+h1 { font-size: 42px; font-weight: 600; color: var(--gold); margin-bottom: 12px; line-height: 1.15; }
+.subtitle { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 24px; }
+.divider { width: 60px; height: 1px; background: var(--gold-dim); margin: 24px auto; }
+.desc { font-size: 15px; color: var(--text-muted); margin-bottom: 32px; line-height: 1.6; }
+.issue { padding: 16px 20px; margin-bottom: 10px; border: 1px solid #2a2a45; border-radius: 6px; text-align: left; }
+.issue .num { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: var(--gold); margin-bottom: 2px; }
+.issue .date { font-size: 13px; color: var(--text); }
+.issue .tag { font-family: 'Inter', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold-dim); }
+a { color: var(--gold-dim); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.footer { margin-top: 40px; font-size: 12px; color: var(--text-muted); }
 </style>
 </head>
 <body>
-<div class="magazine">
-
-<div class="cover">
+<div class="container">
 <div class="subtitle">Magazine Hebdomadaire</div>
-<h1>Actualités JDR</h1>
-<div class="date">9 — 15 juillet 2026</div>
+<h1>L'Œil de Jasra</h1>
 <div class="divider"></div>
-<div class="desc">939 articles scrutés · 15 sources · le meilleur de la semaine</div>
-<div class="toc">Au sommaire</div>
-<div class="toc-line"><span>I.</span> L'affaire Diamond Comics · quand JP Morgan met le JDR américain à genoux</div>
-<div class="toc-line"><span>II.</span> Dark Sun : le retour du monstre</div>
-<div class="toc-line"><span>III.</span> COC Contemporain V2 · le pari des suppléments par genre</div>
-<div class="toc-line"><span>IV.</span> Les 9 Buzz de la semaine</div>
-<div class="toc-line"><span>V.</span> Nouvelles du front · Deathbringer, Ghost in the Shell, Fabula Ultima, Wolfenstrahd, Night Hunters, Fiends & Foes, Thousand Arrows</div>
-<div class="toc-line"><span>VI.</span> Crowdfunding Watch · Deathbringer, Sly Flourish, Children of Time et +</div>
-<div class="toc-line"><span>VII.</span> Critiques · Deathbringer, Thousand Arrows</div>
-<div class="toc-line"><span>VIII.</span> Podcasts · La sélection de la semaine</div>
-<div class="toc-line"><span>IX.</span> Le Coin des Geeks · cinéma, séries, jeux vidéo, anime</div>
-<div class="toc-line"><span>X.</span> Agenda · GenCon, sorties, événements</div>
-<div class="toc-line"><span>XI.</span> En Coulisses · statistiques de veille</div>
+<div class="desc">Le magazine d'actualité JDR de Jasra. Chaque semaine, 15 sources scrutées, des articles développés, des critiques, des podcasts, et tout ce qui fait vibrer le rôliste.</div>
+
+<div class="issue">
+<div class="num">Beta-0</div>
+<div class="tag">📄 Dernier numéro</div>
+<div class="date">9 — 15 juillet 2026 · Diamond Comics, Dark Sun, COC V2, Deathbringer, crowdfunding, podcasts</div>
+<a href="beta-0/">→ Lire le numéro</a>
 </div>
 
-<!-- I. DIAMOND -->
-<div class="section-header"><span class="line"></span><span class="label">I. À la une</span><span class="line"></span></div>
-<h1 class="article-title">L'affaire Diamond Comics :<br>quand JP Morgan met le JDR américain à genoux</h1>
-<img class="article-image" src="https://lefix.di6dent.fr/wp-content/uploads/2026/07/PaizoLogo_une.webp" alt="Logo Paizo" onerror="this.style.display='none'">
-<div class="article-caption">Logo Paizo — Source : Le Fix</div>
-<div class="columns">
-<p>La nouvelle tomba comme une pierre dans un puits sans fond : Diamond Comic Distributors, ce géant tranquille qui pendant des décennies avait fait et défait les fortunes de la bande dessinée américaine, déposait le bilan. Le Chapitre 11 — cette procédure de faillite protectrice que les entreprises américaines invoquent quand elles veulent négocier leur survie à couvert — fut déposé devant un tribunal du Maryland au printemps 2025. Et dans le sillage immédiat de cette annonce, ce n'est pas une vague qui se leva, mais un tsunami qui déferla sur l'ensemble de l'industrie du jeu de rôle.</p>
-<p>Pour comprendre l'ampleur du séisme, il faut remonter au squelette de l'édifice. Diamond Comics n'était pas un simple distributeur. <em>C'était le distributeur.</em> Depuis la fin des années 1990, la société avait méthodiquement éliminé toute concurrence pour devenir le monopole de fait de la distribution de comics en Amérique du Nord. Les éditeurs indépendants n'avaient guère le choix : passer par Diamond, c'était la porte d'entrée vers les magasins spécialisés. Ne pas passer par Diamond, c'était l'invisibilité commerciale.</p>
-<p>Cette position de force avait engendré une dépendance structurelle — et c'est précisément cette dépendance qui transforma la faillite d'une seule entreprise en catastrophe collective.</p>
-<p>Le coup le plus brutal vint pourtant d'un acteur qui, à première vue, n'avait rien à voir avec le monde des jeux. <strong>JP Morgan Chase</strong>, le principal créancier garanti de Diamond, détenait une créance de <strong>41 millions de dollars</strong>. Mais ce qui mit le feu aux poudres, ce ne fut pas le montant — c'était une clause obscure enfouie dans les termes du crédit, une disposition qui permettait à la banque, en cas de faillite, de procéder à une saisie immédiate sur les actifs les plus liquides de Diamond. En l'espace de quelques jours, JP Morgan fit valoir cette clause et emporta <strong>sept millions de dollars</strong>.</p>
-<div class="pullquote">« Légale mais brutale — une clause obscure du Chapitre 11 »</div>
-<p>Cette saisie, légale mais brutale, priva de facto <strong>cent vingt-huit éditeurs</strong> de paiements qui leur étaient dus. La somme pouvait sembler modeste pour une banque de la taille de JP Morgan. Pour des petites structures éditoriales vivant mois par mois, elle représentait une condamnation.</p>
-<p>Parmi les plus touchés, des noms que les amateurs de jeu de rôle connaissent intimement. <strong>Paizo</strong>, l'éditeur de Pathfinder et Starfinder, vit une part significative de sa trésorerie disparaître du jour au lendemain. <strong>Green Ronin Publishing</strong>, derrière le système AGE et des licences comme The Expanse RPG, subit le même sort. Mais au-delà des grands noms, ce sont des dizaines de petites maisons d'édition — celles qui publient les suppléments confidentiels, les zines de niche — qui se retrouvèrent au bord du précipice.</p>
-<p>Dans la foulée de cette crise, Paizo prit la décision radicale de mettre fin à sa collaboration avec les <strong>Archives of Nethys</strong>, cette référence en ligne incontournable pour les joueurs de Pathfinder qui fournissait gratuitement l'intégralité des règles publiées. Le message était limpide : quand l'eau monte, même les principes les plus généreux cèdent devant l'urgence de la survie économique.</p>
-<p>Face à l'effondrement, <strong>deux stratégies</strong> émergent. Certains éditeurs accélèrent la diversification des canaux de distribution — vers Amazon, vers des distributeurs européens, vers la vente directe en ligne. D'autres, plus audacieux, mutualisent leurs ressources pour créer un réseau de distribution coopératif, un maillage décentralisé de petits distributeurs régionaux. Le modèle est plus fragile, mais il porte une philosophie radicalement différente — celle d'un écosystème qui refuse de s'effondrer tout entier quand un seul maillon cède.</p>
-<p>Ce que cette crise révèle, c'est que la fragilité du jeu de rôle américain n'est pas conjoncturelle. Hors de Californie, hors de l'orbite de Wizards of the Coast, l'industrie tient sur des épaules de nageurs. Des épaules courageuses, obstinées, passionnées — mais qui, à chaque nouvelle tempête, s'enfoncent un peu plus sous la surface.</p>
-</div>
-<div class="article-footer">
-<a href="https://lefix.di6dent.fr/archives/laffaire-diamond-comics-le-jdr-americain-en-danger/" target="_blank">→ Le Fix — L'affaire Diamond Comics</a> &nbsp;·&nbsp;
-<a href="https://www.enworld.org/threads/pathfinder-is-ending-its-relationship-with-archives-of-nethys.719899/" target="_blank">→ EN World — Pathfinder / AoN</a>
-</div>
-
-<!-- II. DARK SUN -->
-<div class="section-header green"><span class="line"></span><span class="label">II. Le grand retour</span><span class="line"></span></div>
-<h1 class="article-title">Dark Sun : le retour du monstre<br>sur les terres brûlées d'Athas</h1>
-<div class="columns">
-<p>Il y a des rumeurs qui traînent si longtemps qu'elles finissent par prendre la patine des légendes urbaines. Dark Sun, le setting le plus impitoyable de l'histoire de Donjons & Dragons, est de ces rumeurs-là. Depuis des années, les forums brûlent de threads en « Unconfirmed Dark Sun Book », et à chaque cycle de rumeurs, la communauté retient son souffle. Cette fois, pourtant, les signaux sont trop nombreux pour les ignorer.</p>
-<p>En octobre 2025, Wizards of the Coast a déposé une nouvelle demande d'enregistrement de la marque Dark Sun auprès de l'USPTO — remplaçant un précédent dépôt qui avait expiré en 2024. La demande couvre à la fois les jeux électroniques téléchargeables, les jeux physiques et les services de divertissement. C'est le geste administratif classique qui précède une annonce, le même pattern observé avant le retour de Spelljammer et des Royaumes Oubliés en 5e Édition.</p>
-<p>Mais le vrai carburant de la rumeur, ce sont les <strong>Unearthed Arcana</strong> publiés en août 2025. Wizards a lâché un livret de playtest consacré à la classe de <strong>Psion</strong> — complète, avec ses propres mécaniques de points de pouvoir — accompagné de plusieurs sous-classes qui ne laissent aucun doute : des sous-classes de Templier, de Gladiateur, de Défiler et de Préservateur. Quiconque connaît Athas reconnaît là l'ADN même du setting : les sorciers-rois, les arènes de gladiateurs, la magie qui dévore la vie.</p>
-<div class="pullquote green-text">« Athas n'est pas un décor de plus. C'est un contre-modèle. La fantasy comme territoire hostile. »</div>
-<p>La date de sortie potentielle est fixée à <strong>janvier 2027</strong> sur les calendriers des revendeurs, mais les plus optimistes espèrent une annonce à la <strong>GenCon 2026</strong> (juin — on y est presque). Le livre serait un « campaign setting world book », dans la veine de ce que Wizards a fait pour Spelljammer, mais avec une ambition revue à la hausse. Et il y a une raison à cela : Dark Sun n'est pas un décor comme les autres.</p>
-<p>Ce qui rend Athas unique, c'est sa radicalité. Pas de dieux. Pas de métaux précieux (l'acier est un trésor). La magie elle-même y est une force toxique qui flétrit la terre. Les elfes y sont des nomades commerçants, les demi-elfes des exclus, les nains des obsédés monomaniaques. Et au sommet de la pyramide de la cruauté, les sorciers-rois règnent sur des cités-états où l'esclavage est la norme. C'est un monde qui ne fait pas de compromis, et c'est exactement pour cela que ses fans l'adorent.</p>
-<p>La question qui divise la communauté est simple : Wizards of the Coast va-t-il édulcorer le setting ? Entre la sensibilité moderne, les polémiques sur l'esclavage représenté en jeu, et la direction artistique « heroic fantasy » de la 5e Édition, le choc des cultures semble inévitable. Les forums d'EN World bouillonnent de débats — certains veulent un Dark Sun « fidèle jusqu'à la cruauté », d'autres anticipent un setting aseptisé. La vérité, comme souvent, sera probablement entre les deux.</p>
-<p>Ce qui est certain, c'est que l'appétit est là. Le thread « Unconfirmed Dark Sun Book » sur EN World dépasse les 600 réponses, et le subreddit r/dndnext voit passer des théories toutes les semaines. Si Wizards annonce Dark Sun à la GenCon, ce sera l'un des moments les plus importants pour D&D depuis le lancement de la 5e Édition.</p>
-</div>
-<div class="article-footer">
-<a href="https://www.enworld.org/threads/wizards-of-the-coast-re-registers-dark-sun-with-uspto.716113/" target="_blank">→ EN World — WotC Re-Registers Dark Sun</a> &nbsp;·&nbsp;
-<a href="https://www.enworld.org/threads/unconfirmed-dark-sun-book.716722/" target="_blank">→ EN World — Unconfirmed Dark Sun Book</a>
-</div>
-
-<!-- III. COC V2 -->
-<div class="section-header purple"><span class="line"></span><span class="label">III. Le dossier</span><span class="line"></span></div>
-<h1 class="article-title">COC Contemporain V2 :<br>le pari des suppléments par genre</h1>
-<img class="article-image" src="https://scriiipt.com/wp-content/uploads/2026/07/COC2_Horreur.jpg" alt="COC Contemporain V2" onerror="this.style.display='none'">
-<div class="article-caption">COC Contemporain V2 — Supplément Horreur © Black Book Éditions</div>
-<div class="columns">
-<p>Chroniques Oubliées Contemporain n'a pas simplement changé de version. Il a changé de philosophie. Là où la première mouture proposait une boîte à outils de trois cents pages vendue vingt-cinq euros — un pavé touffu, ambitieux, parfois intimidant dans sa volonté de tout couvrir —, la V2 opère un geste éditorial plus radical : un livre allégé de cent quarante-sept pages à trente euros, accompagné de suppléments vendus séparément au même prix.</p>
-<p>Le pari est limpide. Plutôt que de tout enfermer entre les mêmes couvertures, on offre un noyau dur et l'on confie les extensions à des volumes dédiés. L'utilisateur paie plus pour obtenir la même chose, mais il gagne en lisibilité ce qu'il perd en compacité.</p>
-<p>L'enjeu de fond pourtant ne se situe pas là. Il se trouve dans cette question lancinante que le titre lui-même pose : <em>peut-on vraiment jouer « tout le contemporain » ?</em> Le contemporain n'est pas un genre. C'est un océan. Un thriller à Marseille n'a rien de commun avec une enquête lovecraftienne dans le Vermont, et un polar urbain à Tokyo ne respire pas comme une comédie romantique parisienne.</p>
-<p>Le supplément <strong>Horreur</strong> illustre cette approche avec une ambition notable. Sept sous-genres y sont déclinés — du gothique au survival, en passant par le folk horror et le cosmic —, chacun bénéficiant d'un traitement qui dépasse la simple liste de monstres. Les voies Fantôme, Vampire et Loup-Garou ne sont pas de simples fiches de créatures. Elles proposent des arcs mécaniques qui incarnent la condition du monstre : la dégradation, la faim, la dualité.</p>
-<div class="pullquote purple-text">« Le Fantôme ne se réduit pas à une présence invisible. Il est un personnage qui se défait. »</div>
-<p>Parmi les outils les plus remarquables de cette édition figure l'<strong>Échelle de Tchekhov</strong>, un dispositif narratif qui mécanise le principe de l'arme de Tchekhov. L'échelle gradue l'importance narrative d'un élément de décor, d'un objet, d'un personnage secondaire, et en détermine le potentiel d'impact dramatique. C'est un outil qui parle autant aux maîtres de jeu qu'aux joueurs, leur offrant un langage commun pour mesurer ce qui compte dans une scène.</p>
-<p>Reste les questions qui fâchent. <strong>Toon Confidential</strong>, le supplément cartoon, a divisé. Peut-on réellement greffer l'absurde et la logique cartoon sur un système conçu pour le contemporain réaliste ? La réponse du livre est « oui, mais autrement ». Le cartoon ne se joue pas avec les mêmes règles que le thriller. Il s'en joue à côté.</p>
-<p>Quant aux <strong>Blockbusters</strong>, ces scénarios préconçus taillés pour les franchises hollywoodiennes, ils posent une question plus vertigineuse : le système est-il assez robuste pour porter des univers qui ont déjà leur propre identité ludique ? La V2 ne tranche pas. Elle propose, elle teste, elle ouvre des portes. Et c'est peut-être là sa plus grande force — accepter que le contemporain ne soit pas un territoire à conquérir, mais un horizon à poursuivre.</p>
-</div>
-<div class="article-footer">
-<a href="https://scriiipt.com/2026/07/chroniques-oubliees-contemporain-v2/" target="_blank">→ SCRiiiPT — Chroniques Oubliées Contemporain V2</a>
-</div>
-
-<!-- IV. BUZZ -->
-<div class="section-header orange"><span class="line"></span><span class="label">IV. Les 9 Buzz de la semaine</span><span class="line"></span></div>
-<h1 class="article-title">Ce qu'il ne fallait pas manquer<br>sur les tables et dans les backrooms</h1>
-<p style="font-size:13.5px;color:var(--text-muted);margin-bottom:16px;font-style:italic;">Les petites nouvelles qui font le sel de la veille — développées, liées, contextualisées.</p>
-<div class="buzz-list">
-<div class="buzz-item"><div class="buzz-title">1. Paizo met fin à son partenariat avec Archives of Nethys</div><div class="buzz-desc">Après huit ans de collaboration, Paizo a résilié sa licence avec Archives of Nethys, le site qui référençait gratuitement l'intégralité des règles de Pathfinder et Starfinder. Motif invoqué : le site n'a jamais généré assez de royalties. Conséquence : le site continue sous licence communautaire, mais perd les artworks officiels et l'accès anticipé aux sorties.</div><a class="buzz-link" href="https://www.enworld.org/threads/pathfinder-is-ending-its-relationship-with-archives-of-nethys.719899/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">2. Le GROG référence « Les Voies d'Urcaën » pour Iron Kingdoms</div><div class="buzz-desc">Agate Éditions publie un nouveau supplément pour Iron Kingdoms 3e Édition, explorant les voix mystérieuses qui hantent les terres d'Urcaën. Un titre qui promet d'enrichir les campagnes steampunk-wargame.</div><a class="buzz-link" href="https://www.legrog.org/jeux/iron-kingdoms/3e-edition-/voies-d-urcaen-fr" target="_blank">→ Voir sur Le GROG</a></div>
-<div class="buzz-item"><div class="buzz-title">3. WOTC va « all out » sur la GenCon 2026</div><div class="buzz-desc">Wizards of the Coast prépare une présence massive à la GenCon cette année. Entre l'annonce potentielle de Dark Sun, les playtests de la Psion, et des révélations sur les prochains suppléments, l'édition 2026 s'annonce comme la plus dense depuis des années.</div><a class="buzz-link" href="https://www.enworld.org/threads/wotc-is-going-all-out-on-gen-con-this-year.719834/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">4. Solis: People of the Sun — un nouveau JDR</div><div class="buzz-desc">Un nouveau jeu de rôle intitulé « Solis: People of the Sun » apparaît sur EN World. Les détails sont encore flous, mais le titre évoque un univers inspiré des mythologies solaires — possiblement précolombiennes ou méditerranéennes.</div><a class="buzz-link" href="https://www.enworld.org/threads/solis-people-of-the-sun.719896/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">5. Children of Time RPG — le KS est live</div><div class="buzz-desc">Le jeu adapté du roman d'Adrian Tchaikovsky est désormais en financement participatif. Un univers où les araignées ont évolué pour devenir une civilisation intelligente — à ne pas manquer pour les amateurs de hard sci-fi.</div><a class="buzz-link" href="https://www.enworld.org/threads/children-of-time-rpg-ks-is-live.719898/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">6. The Body in the Mage Tower — aventure 5e Frankenstein</div><div class="buzz-desc">Une aventure pour D&D 5e mêlant mystère et horreur gothique : enquêtez sur une tour de mage où une créature artificielle a été découverte — clin d'œil assumé au mythe de Frankenstein.</div><a class="buzz-link" href="https://www.enworld.org/threads/just-launched-the-body-in-the-mage-tower-a-5e-mystery-adventure-inspired-by-frankenstein.719897/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">7. Vampire: The Masquerade × D&D 5.5E crossover</div><div class="buzz-desc">Un produit crossover entre Vampire: The Masquerade et D&D 5.5E serait en préparation, avec une sortie sur D&D Beyond. La nouvelle fait déjà grincer des dents les puristes des deux camps.</div><a class="buzz-link" href="https://www.enworld.org/threads/what-is-the-new-vampire-the-masquerade-announcement-at-gencon-2026.719276/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">8. Meow Wolf RPG — Exalted Funeral lance le KS</div><div class="buzz-desc">Le célèbre collectif d'art immersif Meow Wolf a son propre jeu de rôle. Attendez-vous à un jeu aussi psychédélique et déroutant que les installations physiques de l'enseigne.</div><a class="buzz-link" href="https://www.enworld.org/threads/meow-wolf-rpg-from-exalted-funeral-on-kickstarter.718229/" target="_blank">→ Lire sur EN World</a></div>
-<div class="buzz-item"><div class="buzz-title">9. Wolfenstein TTRPG chez Modiphius</div><div class="buzz-desc">Modiphius annonce un jeu de rôle officiel Wolfenstein en système 2d20. Campagne GameFound plus tard dans l'année. De quoi incarner B.J. Blazkowicz à la table.</div><a class="buzz-link" href="https://www.enworld.org/threads/wolfenstein-ttrpg-coming-from-modiphius.718245/" target="_blank">→ Lire sur EN World</a></div>
-</div>
-
-<!-- V. NOUVELLES DU FRONT -->
-<div class="section-header green"><span class="line"></span><span class="label">V. Nouvelles du front</span><span class="line"></span></div>
-<h1 class="article-title">Les sorties, annonces et tendances<br>qui font bouger les lignes</h1>
-
-<div class="game-block"><div class="game-title">⚔️ Deathbringer — Professor DM / Roll For Combat</div>
-<p>Élu <strong>jeu de rôle le plus attendu de 2026</strong> par EN World, Deathbringer est la vision de Professor Dungeon Master sur le fantasy old-school à haute létalité. Basé sur Shadowdark RPG, le jeu pousse le concept encore plus loin : <strong>pas de soins magiques</strong>, une survie qui débloque les plus grands pouvoirs, des dés de mort bonus, et l'utilisation des <strong>Ultimate Dungeon Terrain (UDT)</strong> — une arène circulaire où le monde tourne autour des PJs. La campagne Backerkit (fin le 13 août) propose une entrée à $125 pour le cœur de règle, le paquet d'aventures, 16 fiches de personnage, un écran, un tapis de jeu, et des pions. Les contributeurs incluent Kelsey Dionne, Ben Milton, Justin Alexander, et Brandon « Runehammer » Gillam.</p>
-<a class="game-link" href="https://www.backerkit.com/c/projects/roll-for-combat/deathbringer-ttrpg" target="_blank">→ Backerkit — Deathbringer TTRPG</a> &nbsp;·&nbsp; <a class="game-link" href="https://www.enworld.org/threads/so-whats-the-deal-with-this-deathbringer-thingie.718008/" target="_blank">→ EN World — So what's the deal?</a></div>
-
-<div class="game-block" style="border-left-color: var(--purple);"><div class="game-title">🤖 Ghost in the Shell — le double coup de 2026</div>
-<p>L'année 2026 verra <strong>deux</strong> jeux de rôle Ghost in the Shell. Le premier, chez <strong>Mantic Games</strong>, basé sur le manga original avec un système custom par Alessio Cavatore et Zak Barouh. Sortie prévue cet été. Le second vient de <strong>Mana Project Studio</strong> : <em>GitS: Arise</em>, basé sur l'anime, qui a levé plus de $500,000 sur Kickstarter, sortie à l'automne.</p>
-<a class="game-link" href="https://www.enworld.org/threads/a-second-ghost-in-the-shell-ttrpg-is-on-its-way.718020/" target="_blank">→ EN World — Second GitS TTRPG</a> &nbsp;·&nbsp; <a class="game-link" href="https://www.kickstarter.com/projects/manaprojectstudio/ghost-in-the-shell-roleplaying-game" target="_blank">→ KS — GitS Arise</a></div>
-
-<div class="game-block" style="border-left-color: var(--blue);"><div class="game-title">🎮 Fabula Ultima — mises à jour des playtests</div>
-<p>Le JRPG sur table de Need Games! continue son développement avec des playtests réguliers via le Patreon de Roosterema. Nouvelles classes, compétences héroïques et mécanismes de lien en test.</p>
-<a class="game-link" href="https://www.patreon.com/roosterema/posts/fabula-ultima-46567344" target="_blank">→ Patreon — Fabula Ultima Playtest</a> &nbsp;·&nbsp; <a class="game-link" href="https://www.enworld.org/threads/fabula-ultima-general-thread.715533/" target="_blank">→ EN World — General Thread</a></div>
-
-<div class="game-block" style="border-left-color: var(--orange);"><div class="game-title">🌙 Night Hunters — Kobold Press lance le KS</div>
-<p>Kobold Press dévoile <strong>Night Hunters</strong>, un setting d'horreur gothique pour Tales of the Valiant et D&D 5E. Héros gothiques, pouvoirs maudits, chasses sous la lune. La campagne KS lancée en janvier 2026 commence à livrer ses backers.</p>
-<a class="game-link" href="https://www.kickstarter.com/projects/koboldpress/night-hunters-gothic-horror-for-tov-and-5e-dandd" target="_blank">→ KS — Night Hunters</a> &nbsp;·&nbsp; <a class="game-link" href="https://www.enworld.org/threads/kobold-press-new-kickstarter-revealed-night-hunters-coming-january-2026.715701/" target="_blank">→ EN World — Annonce</a></div>
-
-<div class="game-block" style="border-left-color: var(--purple);"><div class="game-title">🐺 WOLFENSTRAHD (SWADE) — le mashup le plus fou de l'année</div>
-<p>Vous pensiez avoir tout vu ? <strong>WOLFENSTRAHD</strong> est une conversion de Curse of Strahd en Savage Worlds Adventure Edition, mélangé avec Hellboy, Wolfenstein et The Suicide Squad. Les PJs incarnent une équipe de « monstres » envoyés par un mystérieux employeur dans le Barovia de Strahd — flingues, pouvoirs et mission : buter le vampire.</p>
-<a class="game-link" href="https://www.enworld.org/threads/wolfenstrahd-swade.715797/" target="_blank">→ EN World — WOLFENSTRAHD (SWADE)</a></div>
-
-<div class="game-block" style="border-left-color: var(--green);"><div class="game-title">👹 Fiends & Foes — Swords & Wizardry en PDF</div>
-<p>Le bestiaire <strong>Fiends & Foes</strong> pour Swords & Wizardry est disponible en PDF : plus de 300 créatures pour OSR, des démons classiques aux horreurs obscures. Idéal pour varier les menus de monstres à la table.</p>
-<a class="game-link" href="https://thegaminggang.com/game-news/swords-wizardry-fiends-foes-is-out-in-pdf/" target="_blank">→ The Gaming Gang — Fiends & Foes PDF</a></div>
-
-<div class="game-block" style="border-left-color: var(--blue);"><div class="game-title">🏯 Thousand Arrows — Samouraïs PbtA</div>
-<p><strong>Thousand Arrows</strong> est un jeu Powered by the Apocalypse qui plonge les joueurs dans la période Sengoku du Japon médiéval. Action à la Kurosawa, combats au katana, drames de clan et intrigues politiques. Le BackerKit est clos mais les précommandes restent ouvertes.</p>
-<a class="game-link" href="https://www.kickstarter.com/projects/galileogames/thousand-arrows-a-samurai-action-and-drama-ttrpg" target="_blank">→ KS — Thousand Arrows</a> &nbsp;·&nbsp; <a class="game-link" href="https://nerdist.com/article/conquer-the-warring-states-thousand-arrows-an-apocalypse-powered-samurai-rpg/" target="_blank">→ Nerdist — Preview</a></div>
-
-<!-- VI. CROWDFUNDING -->
-<div class="section-header"><span class="line"></span><span class="label">VI. Crowdfunding Watch</span><span class="line"></span></div>
-<h1 class="article-title">Les campagnes qui comptent<br>sur Kickstarter & Backerkit</h1>
-<div class="cf-grid">
-<div class="cf-card"><h4>⚔️ Deathbringer TTRPG</h4><div class="cf-stat">Backerkit · Fin : 13 août 2026</div><p>Le jeu le plus attendu de 2026. High-fantasy old-school sans soins magiques, compatible Shadowdark. Pledge populaire à $125.</p><a class="cf-link" href="https://www.backerkit.com/c/projects/roll-for-combat/deathbringer-ttrpg" target="_blank">→ Voir la campagne</a></div>
-<div class="cf-card"><h4>📖 Rise of the Lazy Gamemaster</h4><div class="cf-stat">Kickstarter · Fin : 6 août 2026</div><p>Mike Shea (Sly Flourish) signe la version remasterisée de son guide du MJ paresseux. Système-agnostique. $50 PDF+print.</p><a class="cf-link" href="https://www.kickstarter.com/projects/slyflourish/rise-of-the-lazy-gamemaster" target="_blank">→ Voir la campagne</a></div>
-<div class="cf-card"><h4>🌌 Children of Time RPG</h4><div class="cf-stat">Kickstarter · Live</div><p>L'adaptation du roman d'Adrian Tchaikovsky. Araignées évoluées, conflits interstellaires, hard sci-fi.</p><a class="cf-link" href="https://www.enworld.org/threads/children-of-time-rpg-ks-is-live.719898/" target="_blank">→ EN World — Annonce</a></div>
-<div class="cf-card"><h4>🏴‍☠️ Limithron's Pirate Map Collection</h4><div class="cf-stat">Kickstarter · Fin : 4 août 2026</div><p>Les créateurs de Pirate Borg proposent 100+ cartes nautiques effaçables à sec. $100 le coffret.</p><a class="cf-link" href="https://www.kickstarter.com/projects/limithron/limithrons-pirate-map-collection" target="_blank">→ Voir la campagne</a></div>
-<div class="cf-card"><h4>🌀 Meow Wolf RPG</h4><div class="cf-stat">Kickstarter · Live</div><p>Le collectif d'art immersif Meow Wolf a son JDR. Expérience psychédélique et non-linéaire.</p><a class="cf-link" href="https://www.enworld.org/threads/meow-wolf-rpg-from-exalted-funeral-on-kickstarter.718229/" target="_blank">→ EN World — Annonce</a></div>
-<div class="cf-card"><h4>🎭 The Soul of Trickery (D&D 5.19E)</h4><div class="cf-stat">Backerkit · Fin : 1er août 2026</div><p>Supplément d'expansion pour la version Nat19 de D&D 5e. Zéro IA utilisé.</p><a class="cf-link" href="https://www.backerkit.com/c/projects/nat19/soul-of-trickery" target="_blank">→ Voir la campagne</a></div>
-</div>
-
-<!-- VII. CRITIQUES -->
-<div class="section-header purple"><span class="line"></span><span class="label">VII. Critiques</span><span class="line"></span></div>
-<h1 class="article-title">Deathbringer : premières impressions<br>sur le OSR le plus attendu de 2026</h1>
-<div class="columns">
-<p>4 pages sur DriveThruRPG à $3.99. Des critiques enflammées. Le titre de « jeu le plus attendu de 2026 ». Si vous ne connaissez pas Deathbringer, c'est le jeu de rôle que Professor Dungeon Master a construit pierre par pierre devant sa communauté.</p>
-<p>Le cœur du jeu, c'est le <strong>Shadowdark RPG</strong> de Kelsey Dionne — un système OSR moderne. Mais PDM pousse le curseur plus loin. Pas de soins magiques. Pas de cleric qui répare les PV. Vous saignez, vous survivez, ou vous créez un nouveau personnage. Les personnages qui survivent assez longtemps débloquent des pouvoirs démesurés, créant une courbe de progression inverse où le danger devient récompense.</p>
-<p>La signature visuelle, ce sont les <strong>Ultimate Dungeon Terrain</strong> (UDT) : des scènes circulaires centrées sur les PJs, éliminant la gestion des distances complexes. Élégant, simple, focus sur l'action.</p>
-<p>Le casting des contributeurs est impressionnant : Ben Milton (Questing Beast), Justin Alexander (The Alexandrian), Kelsey Dionne, Brandon « Runehammer » Gillam. Chacun apporte une aventure qui colle à la philosophie Deathbringer. Le résultat capture l'esprit des années 80 dans le langage des joueurs d'aujourd'hui.</p>
-<p>Le prix d'entrée à $125 place Deathbringer en gamme premium. Les premiers retours disent que le contenu justifie l'investissement. Verdict à l'automne.</p>
-</div>
-<div class="article-footer">
-<a href="https://www.backerkit.com/c/projects/roll-for-combat/deathbringer-ttrpg" target="_blank">→ Deathbringer sur Backerkit</a> &nbsp;·&nbsp; <a href="https://www.enworld.org/threads/so-whats-the-deal-with-this-deathbringer-thingie.718008/" target="_blank">→ EN World — Discussion</a>
-</div>
-
-<!-- VIII. PODCASTS -->
-<div class="section-header blue"><span class="line"></span><span class="label">VIII. Podcasts</span><span class="line"></span></div>
-<h1 class="article-title">Ce qu'il fallait écouter<br>sur les ondes cette semaine</h1>
-<div class="podcast-item"><h4>Rise of the Lazy Gamemaster — Interview de Mike Shea</h4><div class="pod-meta">Morrus' Unofficial Tabletop RPG Talk · 15 juillet 2026</div><p>Mike Shea revient sur sa méthode de préparation minimale et comment le nouveau livre condense 10 ans d'expérience en GMing.</p><a class="pod-link" href="https://www.enworld.org/threads/rpg-crowdfunding-news-%E2%80%93-deathbringer-sly-flourish-garys-appendix-and-more.719895/" target="_blank">→ EN World — Mentionné</a></div>
-<div class="podcast-item"><h4>La Cellule — Spéciale Dark Sun</h4><div class="pod-meta">Chaîne YouTube La Cellule · Cette semaine</div><p>Analyse des rumeurs Dark Sun, des UA Psion, et spéculations sur ce que WOTC pourrait faire du setting.</p><a class="pod-link" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSZik8DTUb6idR2t9easRBQ" target="_blank">→ Chaîne La Cellule</a></div>
-<div class="podcast-item"><h4>Geek Powa Podcast — Diamond Comics décrypté</h4><div class="pod-meta">Chaîne YouTube Geek Powa Podcasts · Cette semaine</div><p>Analyse économique de la faillite de Diamond et conséquences pour le JDR en France et à l'international.</p><a class="pod-link" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCJGoap50LL07tseuuCC6HAA" target="_blank">→ Chaîne Geek Powa</a></div>
-<div class="podcast-item"><h4>Rôliskatonic — COC V2 : le test</h4><div class="pod-meta">Chaîne YouTube Rôliskatonic · Cette semaine</div><p>Partie test de Chroniques Oubliées Contemporain V2 avec mise en pratique de l'Échelle de Tchekhov.</p><a class="pod-link" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCszAVJ6A5mt3eKFN1GIzzow" target="_blank">→ Chaîne Rôliskatonic</a></div>
-<div class="podcast-item"><h4>Audiodidact — L'actu JDR de la semaine</h4><div class="pod-meta">Audiodidact · 14 juillet 2026</div><p>Le tour complet de l'actualité JDR en français : Diamond, Dark Sun, Deathbringer, sorties.</p><a class="pod-link" href="https://audiodidact.com/feed.xml" target="_blank">→ Flux RSS Audiodidact</a></div>
-
-<!-- IX. COIN DES GEEKS -->
-<div class="section-header orange"><span class="line"></span><span class="label">IX. Le Coin des Geeks</span><span class="line"></span></div>
-<h1 class="article-title">Pop culture, cinéma, séries, jeux vidéo<br>et tout ce qui fait vibrer le geek</h1>
-<div class="geek-grid">
-<div class="geek-item"><h4>🎬 The Batman Part 2 repoussé à 2028</h4><p>Robert Pattinson ne remettra pas le masque avant 2028. Initialement prévu pour 2026, le film est à nouveau retardé. Matt Reeves promet un scénario qui vaut l'attente.</p><a class="geek-link" href="https://www.polygon.com/the-batman-part-2-teaser-footage-2028-release-date/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>🎮 The Duskbloods : FromSoftware jouable en août</h4><p>Le mystérieux jeu multijoueur-only de FromSoftware sera jouable pour la première fois lors d'un test réseau fermé le mois prochain.</p><a class="geek-link" href="https://www.polygon.com/the-duskbloods-closed-network-test-release-date-august/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>🕹️ Denshattack! — le meilleur Sonic 3D</h4><p>Polygon encense Denshattack!, un jeu de plateforme 3D façon Tony Hawk's Pro Skater qui capture l'esprit des années 2000.</p><a class="geek-link" href="https://www.polygon.com/denshattack-review/" target="_blank">→ Polygon — Review</a></div>
-<div class="geek-item"><h4>🎞️ Nolan's The Odyssey dans Fortnite</h4><p>Le film de Christopher Nolan aura un tie-in dans Fortnite, après Roblox plus tôt ce mois-ci. L'épopée d'Homère en battle pass.</p><a class="geek-link" href="https://www.polygon.com/the-odyssey-christopher-nolan-fortnite/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>📺 Crunchyroll : Sony serre la vis</h4><p>Crunchyroll modifie sa boutique en ligne, restreignant l'accès à certains produits. Les collectionneurs d'anime râlent.</p><a class="geek-link" href="https://www.polygon.com/sony-crunchyroll-store-changes-subscription/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>🤖 George Lucas embrasse l'IA</h4><p>Le créateur de Star Wars se déclare favorable à l'IA générative dans le cinéma. Position controversée qui divise.</p><a class="geek-link" href="https://www.polygon.com/george-lucas-backs-ai-filmmaking/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>🐱 Castlevania: Belmont's Curse sur Switch</h4><p>Le nouveau Metroidvania Castlevania arrive sur Nintendo Switch. Konami assure des performances au rendez-vous.</p><a class="geek-link" href="https://www.polygon.com/castlevania-belmonts-curse-nintendo-switch-release-date/" target="_blank">→ Polygon</a></div>
-<div class="geek-item"><h4>🎂 Pokémon GO — Pikachu Anniversaire</h4><p>L'event « Special Anniversary Pikachu Celebration » est en cours. Pikachu costumés de toutes les époques à capturer.</p><a class="geek-link" href="https://www.polygon.com/pokemon-go-pikachu-celebration-costumes-event-guide-spawns/" target="_blank">→ Polygon — Guide</a></div>
-</div>
-
-<!-- X. AGENDA -->
-<div class="section-header blue"><span class="line"></span><span class="label">X. Agenda</span><span class="line"></span></div>
-<h1 class="article-title">Les dates à cocher<br>sur vos tablettes de MJ</h1>
-<div class="agenda-item"><div class="agenda-date">📅 26-28 juin 2026 (passé)</div><div class="agenda-title">Free RPG Day</div><div class="agenda-desc">Kobold Press, Paizo et d'autres ont participé. Les PDFs gratuits sont encore disponibles.</div><a class="agenda-link" href="https://koboldpress.com/celebrate-free-rpg-day-with-kobold-press-june-26-2026/" target="_blank">→ Kobold Press — Free RPG Day</a></div>
-<div class="agenda-item"><div class="agenda-date">📅 Juillet 2026</div><div class="agenda-title">GenCon 2026 — Annonces majeures attendues</div><div class="agenda-desc">WOTC promet une présence massive. Annonce potentielle de Dark Sun, révélation des prochains suppléments.</div><a class="agenda-link" href="https://www.enworld.org/threads/wotc-is-going-all-out-on-gen-con-this-year.719834/" target="_blank">→ EN World</a></div>
-<div class="agenda-item"><div class="agenda-date">📅 24 juillet 2026</div><div class="agenda-title">Fin partenariat Paizo / Archives of Nethys</div><div class="agenda-desc">Perte de la licence officielle. Retrait des artworks, fin de l'accès anticipé. Site continue sous CUP.</div><a class="agenda-link" href="https://www.enworld.org/threads/pathfinder-is-ending-its-relationship-with-archives-of-nethys.719899/" target="_blank">→ EN World</a></div>
-<div class="agenda-item"><div class="agenda-date">📅 1er août 2026</div><div class="agenda-title">Fin — The Soul of Trickery (Backerkit)</div><div class="agenda-desc">Dernière chance pour le supplément D&D 5.19E par Nat19.</div></div>
-<div class="agenda-item"><div class="agenda-date">📅 4 août 2026</div><div class="agenda-title">Fin — Limithron's Pirate Map Collection (KS)</div><div class="agenda-desc">100+ cartes nautiques effaçables.</div></div>
-<div class="agenda-item"><div class="agenda-date">📅 6 août 2026</div><div class="agenda-title">Fin — Rise of the Lazy Gamemaster (KS)</div><div class="agenda-desc">Guide du MJ paresseux par Sly Flourish.</div></div>
-<div class="agenda-item"><div class="agenda-date">📅 13 août 2026</div><div class="agenda-title">Fin — Deathbringer TTRPG (Backerkit)</div><div class="agenda-desc">La campagne la plus attendue ferme ses portes.</div></div>
-<div class="agenda-item"><div class="agenda-date">📅 Automne 2026</div><div class="agenda-title">Sortie — Ghost in the Shell: Arise</div><div class="agenda-desc">JDR basé sur l'anime, Mana Project Studio, $500k+ sur KS.</div></div>
-<div class="agenda-item"><div class="agenda-date">📅 Janvier 2027 (rumeur)</div><div class="agenda-title">Sortie potentielle — Dark Sun Campaign Setting</div><div class="agenda-desc">Si annonce à GenCon, sortie début 2027 plausible.</div></div>
-
-<!-- XI. EN COULISSES -->
-<div class="section-header green"><span class="line"></span><span class="label">XI. En Coulisses</span><span class="line"></span></div>
-<h1 class="article-title">Les coulisses de la veille<br>et les statistiques de la semaine</h1>
-<div class="columns">
-<p><strong>939 articles trackés</strong> depuis la mise en place de la veille RSS. <strong>16 nouveaux articles</strong> aujourd'hui sur les 30 flux surveillés. <strong>18 flux</strong> inchangés (304 Not Modified).</p>
-<p><strong>Sources les plus actives</strong> : EN World (industrie/news), Polygon (pop culture), Le GROG (parutions françaises). Les flux Foundry VTT sont restés calmes.</p>
-<div class="pullquote green-text">« 15 sources actives — 939 articles — 16 nouveaux aujourd'hui »</div>
-<p><strong>Nouveaux flux</strong> : scan automatique des domaines exécuté. Des flux français spécialisés identifiés — à confirmer.</p>
-<p><strong>Système de veille</strong> : conditional fetch (If-Modified-Since / ETag) fonctionne, réduisant bande passante et temps de scan. Prochain scan programmé demain.</p>
-</div>
-<div class="article-footer">
-<a href="https://github.com/Gabryel666/jdr-magazine" target="_blank">→ Dépôt GitHub du magazine</a> &nbsp;·&nbsp;
-<a href="https://gabryel666.github.io/jdr-magazine/" target="_blank">→ Magazine en ligne</a>
-</div>
-
-<div class="back-cover">
-<p>Prochain numéro : lundi 21 juillet 2026</p>
-<div class="divider" style="margin: 20px auto;"></div>
-<div class="muted">Bel été sur vos tables — et que les dés vous soient favorables.</div>
-</div>
-
+<div class="footer">Prochain numéro : lundi 21 juillet 2026 · <a href="https://github.com/Gabryel666/oeil-de-jasra">Dépôt GitHub</a></div>
 </div>
 </body>
 </html>
