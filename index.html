@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actualités JDR — 9-15 juillet 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #1a1a2e;
+  --card: #222240;
+  --gold: #e8c88a;
+  --gold-dim: #c9a96e;
+  --text: #e0e0eb;
+  --text-muted: #9999b0;
+  --purple: #c884c8;
+  --border: #2a2a45;
+  --gutter: 24px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.65;
+  padding: 40px 20px;
+}
+.magazine {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── Cover ── */
+.cover {
+  text-align: center;
+  padding: 100px 20px 60px;
+  border-bottom: 1px solid var(--gold-dim);
+  margin-bottom: 40px;
+}
+.cover .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 24px;
+}
+.cover h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+.cover .date {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-dim);
+  margin-bottom: 24px;
+}
+.cover .divider {
+  width: 80px;
+  height: 1px;
+  background: var(--gold-dim);
+  margin: 0 auto 28px;
+}
+.cover .desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+.cover .toc {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 16px;
+}
+.cover .toc-line {
+  font-size: 15px;
+  color: var(--text);
+  padding: 4px 0;
+}
+.cover .toc-line span { color: var(--gold-dim); margin-right: 10px; }
+
+/* ── Section headers ── */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  margin-top: 48px;
+}
+.section-header .line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+.section-header .label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.section-header.purple .line { background: linear-gradient(to right, transparent, var(--purple), transparent); }
+.section-header.purple .label { color: var(--purple); }
+
+/* ── Article ── */
+.article-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #f0f0f8;
+}
+.article-image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  display: block;
+}
+.article-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* ── Two columns layout ── */
+.columns {
+  column-count: 2;
+  column-gap: 32px;
+  column-rule: 1px solid var(--border);
+}
+.columns p {
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  text-align: justify;
+  break-inside: avoid;
+}
+.columns .pullquote {
+  column-span: all;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-dim);
+  padding: 20px 40px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 16px 0 20px;
+}
+.columns .pullquote.purple-text { color: var(--purple); }
+
+.article-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.article-footer a {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--gold-dim);
+  text-decoration: none;
+}
+.article-footer a:hover { text-decoration: underline; }
+
+/* ── Back cover ── */
+.back-cover {
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 60px;
+  border-top: 1px solid var(--gold-dim);
+}
+.back-cover p {
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.back-cover .muted {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .columns { column-count: 1; }
+  .cover h1 { font-size: 32px; }
+  .article-title { font-size: 22px; }
+  .columns .pullquote {
+    font-size: 14px;
+    padding: 16px 16px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="magazine">
+
+  <!-- ═══ COVER ═══ -->
+  <div class="cover">
+    <div class="subtitle">Magazine Hebdomadaire</div>
+    <h1>Actualités JDR</h1>
+    <div class="date">9 — 15 juillet 2026</div>
+    <div class="divider"></div>
+    <div class="desc">277 articles scrutés · 15 sources · le meilleur de la semaine</div>
+    <div class="toc">Au sommaire</div>
+    <div class="toc-line"><span>I.</span> L'affaire Diamond Comics · quand JP Morgan met le JDR américain à genoux</div>
+    <div class="toc-line"><span>II.</span> COC Contemporain V2 · le pari des suppléments par genre</div>
+  </div>
+
+  <!-- ═══ ARTICLE 1 ═══ -->
+  <div class="section-header">
+    <span class="line"></span>
+    <span class="label">I. À la une</span>
+    <span class="line"></span>
+  </div>
+
+  <h1 class="article-title">L'affaire Diamond Comics :<br>quand JP Morgan met le JDR américain à genoux</h1>
+
+  <img class="article-image" src="https://lefix.di6dent.fr/wp-content/uploads/2026/07/PaizoLogo_une.webp" alt="Logo Paizo">
+  <div class="article-caption">Logo Paizo — Source : Le Fix</div>
+
+  <div class="columns">
+    <p>La nouvelle tomba comme une pierre dans un puits sans fond : Diamond Comic Distributors, ce géant tranquille qui pendant des décennies avait fait et défait les fortunes de la bande dessinée américaine, déposait le bilan. Le Chapitre 11 — cette procédure de faillite protectrice que les entreprises américaines invoquent quand elles veulent négocier leur survie à couvert — fut déposé devant un tribunal du Maryland au printemps 2025. Et dans le sillage immédiat de cette annonce, ce n'est pas une vague qui se leva, mais un tsunami qui déferla sur l'ensemble de l'industrie du jeu de rôle, balayant sur son passage des éditeurs, des créateurs, des boutiques, et tout un écosystème qui avait bâti sa logistique sur une seule colonne vertébrale.</p>
+
+    <p>Pour comprendre l'ampleur du séisme, il faut remonter au squelette de l'édifice. Diamond Comics n'était pas un simple distributeur. <em>C'était le distributeur.</em> Depuis la fin des années 1990, la société avait méthodiquement éliminé toute concurrence pour devenir le monopole de fait de la distribution de comics en Amérique du Nord. Les éditeurs indépendants n'avaient guère le choix : passer par Diamond, c'était la porte d'entrée vers les magasins spécialisés. Ne pas passer par Diamond, c'était l'invisibilité commerciale.</p>
+
+    <p>Cette position de force avait engendré une dépendance structurelle — et c'est précisément cette dépendance qui transforma la faillite d'une seule entreprise en catastrophe collective.</p>
+
+    <p>Le coup le plus brutal vint pourtant d'un acteur qui, à première vue, n'avait rien à voir avec le monde des jeux. JP Morgan Chase, le principal créancier garanti de Diamond, détenait une créance de <strong>41 millions de dollars</strong>. Mais ce qui mit le feu aux poudres, ce ne fut pas le montant — c'était une clause obscure enfouie dans les termes du crédit, une disposition qui permettait à la banque, en cas de faillite, de procéder à une saisie immédiate sur les actifs les plus liquides de Diamond. En l'espace de quelques jours, JP Morgan fit valoir cette clause et emporta <strong>sept millions de dollars</strong>.</p>
+
+    <div class="pullquote">« Légale mais brutale — une clause obscure du Chapitre 11 »</div>
+
+    <p>Cette saisie, légale mais brutale, priva de facto <strong>cent vingt-huit éditeurs</strong> de paiements qui leur étaient dus. La somme pouvait sembler modeste pour une banque de la taille de JP Morgan. Pour des petites structures éditoriales vivant mois par mois, elle représentait une condamnation.</p>
+
+    <p>Parmi les plus touchés, des noms que les amateurs de jeu de rôle connaissent intimement. <strong>Paizo</strong>, l'éditeur de Pathfinder et Starfinder, vit une part significative de sa trésorerie disparaître du jour au lendemain. <strong>Green Ronin Publishing</strong>, derrière le système AGE et des licences comme The Expanse RPG, subit le même sort. Mais au-delà des grands noms, ce sont des dizaines de petites maisons d'édition — celles qui publient les suppléments confidentiels, les zines de niche — qui se retrouvèrent au bord du précipice.</p>
+
+    <p>Dans la foulée de cette crise, Paizo prit la décision radicale de mettre fin à sa collaboration avec les <strong>Archives of Nethys</strong>, cette référence en ligne incontournable pour les joueurs de Pathfinder qui fournissait gratuitement l'intégralité des règles publiées. Le message était limpide : quand l'eau monte, même les principes les plus généreux cèdent devant l'urgence de la survie économique.</p>
+
+    <p>Face à l'effondrement, <strong>deux stratégies</strong> émergent. Certains éditeurs accélèrent la diversification des canaux de distribution — vers Amazon, vers des distributeurs européens, vers la vente directe en ligne. D'autres, plus audacieux, mutualisent leurs ressources pour créer un réseau de distribution coopératif, un maillage décentralisé de petits distributeurs régionaux. Le modèle est plus fragile, mais il porte une philosophie radicalement différente — celle d'un écosystème qui refuse de s'effondrer tout entier quand un seul maillon cède.</p>
+
+    <p>Ce que cette crise révèle, c'est que la fragilité du jeu de rôle américain n'est pas conjoncturelle. Hors de Californie, hors de l'orbite de Wizards of the Coast, l'industrie tient sur des épaules de nageurs. Des épaules courageuses, obstinées, passionnées — mais qui, à chaque nouvelle tempête, s'enfoncent un peu plus sous la surface.</p>
+  </div>
+
+  <div class="article-footer">
+    <a href="https://lefix.di6dent.fr/archives/laffaire-diamond-comics-le-jdr-americain-en-danger/" target="_blank">→ Source : Le Fix — L'affaire Diamond Comics</a>
+  </div>
+
+  <!-- ═══ ARTICLE 2 ═══ -->
+  <div class="section-header purple">
+    <span class="line"></span>
+    <span class="label">II. Le dossier</span>
+    <span class="line"></span>
+  </div>
+
+  <h1 class="article-title">COC Contemporain V2 :<br>le pari des suppléments par genre</h1>
+
+  <img class="article-image" src="https://scriiipt.com/wp-content/uploads/2026/07/COC2_Horreur.jpg" alt="COC Contemporain V2 - Supplément Horreur" onerror="this.style.display='none'">
+  <div class="article-caption">COC Contemporain V2 — Supplément Horreur © Black Book Éditions</div>
+
+  <div class="columns">
+    <p>Chroniques Oubliées Contemporain n'a pas simplement changé de version. Il a changé de philosophie. Là où la première mouture proposait une boîte à outils de trois cents pages vendue vingt-cinq euros — un pavé touffu, ambitieux, parfois intimidant dans sa volonté de tout couvrir —, la V2 opère un geste éditorial plus radical : un livre allégé de cent quarante-sept pages à trente euros, accompagné de suppléments vendus séparément au même prix.</p>
+
+    <p>Le pari est limpide. Plutôt que de tout enfermer entre les mêmes couvertures, on offre un noyau dur et l'on confie les extensions à des volumes dédiés. L'utilisateur paie plus pour obtenir la même chose, mais il gagne en lisibilité ce qu'il perd en compacité.</p>
+
+    <p>L'enjeu de fond pourtant ne se situe pas là. Il se trouve dans cette question lancinante que le titre lui-même pose : <em>peut-on vraiment jouer « tout le contemporain » ?</em> Le contemporain n'est pas un genre. C'est un océan. Un thriller à Marseille n'a rien de commun avec une enquête lovecraftienne dans le Vermont, et un polar urbain à Tokyo ne respire pas comme une comédie romantique parisienne.</p>
+
+    <p>Le supplément <strong>Horreur</strong> illustre cette approche avec une ambition notable. Sept sous-genres y sont déclinés — du gothique au survival, en passant par le folk horror et le cosmic —, chacun bénéficiant d'un traitement qui dépasse la simple liste de monstres. Les voies Fantôme, Vampire et Loup-Garou ne sont pas de simples fiches de créatures. Elles proposent des arcs mécaniques qui incarnent la condition du monstre : la dégradation, la faim, la dualité.</p>
+
+    <div class="pullquote purple-text">« Le Fantôme ne se réduit pas à une présence invisible. Il est un personnage qui se défait. »</div>
+
+    <p>Parmi les outils les plus remarquables de cette édition figure l'<strong>Échelle de Tchekhov</strong>, un dispositif narratif qui mécanise le principe de l'arme de Tchekhov — ce qui est montré doit servir, ce qui est évoqué peut frapper. L'échelle gradue l'importance narrative d'un élément de décor, d'un objet, d'un personnage secondaire, et en détermine le potentiel d'impact dramatique. C'est un outil qui parle autant aux maîtres de jeu qu'aux joueurs, leur offrant un langage commun pour mesurer ce qui compte dans une scène. Légère en apparence, cette règle transforme discrètement la manière d'habiter un décor : chaque détail devient une promesse ou une menace.</p>
+
+    <p>Reste les questions qui fâchent. <strong>Toon Confidential</strong>, le supplément cartoon, a divisé. Peut-on réellement greffer l'absurde et la logique cartoon sur un système conçu pour le contemporain réaliste ? La réponse du livre est « oui, mais autrement ». Le cartoon ne se joue pas avec les mêmes règles que le thriller. Il s'en joue à côté.</p>
+
+    <p>Quant aux <strong>Blockbusters</strong>, ces scénarios préconçus taillés pour les franchises hollywoodiennes, ils posent une question plus vertigineuse : le système est-il assez robuste pour porter des univers qui ont déjà leur propre identité ludique ? La V2 ne tranche pas. Elle propose, elle teste, elle ouvre des portes. Et c'est peut-être là sa plus grande force — accepter que le contemporain ne soit pas un territoire à conquérir, mais un horizon à poursuivre.</p>
+  </div>
+
+  <div class="article-footer">
+    <a href="https://scriiipt.com/2026/07/chroniques-oubliees-contemporain-v2/" target="_blank">→ Source : SCRiiiPT — Chroniques Oubliées Contemporain V2</a>
+  </div>
+
+  <!-- ═══ BACK ═══ -->
+  <div class="back-cover">
+    <p>Prochain numéro : lundi 21 juillet 2026</p>
+    <div class="divider" style="margin: 20px auto;"></div>
+    <div class="muted">Bel été sur vos tables.</div>
+  </div>
+
+</div>
+</body>
+</html>
