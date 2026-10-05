@@ -1,4 +1,4 @@
-# L’Œil de Jasra — Charte éditoriale et visuelle V4
+# L’Œil de Jasra — Charte éditoriale et visuelle V4.1
 
 ## Mission
 
@@ -11,6 +11,19 @@ L’Œil de Jasra est un magazine **hebdomadaire** d’actualité JDR, publié c
 - Chaque sujet majeur doit être un vrai article : accroche, contexte, faits, analyse, fermeture.
 - Les formats courts doivent rester développés et sourcés, jamais réduits à une liste de titres.
 - Toujours privilégier la matière utile : contexte historique, implications, réactions pertinentes, comparaison avec les développements précédents.
+
+## Règle éditoriale stricte : aucune mécanique interne dans les articles
+
+Les articles destinés au lecteur parlent uniquement du sujet traité.
+
+Ne jamais écrire dans une news ou un article :
+- qu’un sujet est conservé dans l’audit ;
+- qu’une source est suivie dans le registre ;
+- qu’un élément a été ajouté au pipeline ;
+- qu’une règle de production a été appliquée ;
+- qu’un choix vient du cron, du workflow, de la validation, du fact-check interne ou d’un fichier éditorial.
+
+Ces informations appartiennent uniquement au journal de production et, si elles présentent un intérêt réel pour le lecteur, à `En Coulisses`, reformulées dans une langue éditoriale naturelle.
 
 ## Structure éditoriale de référence
 
@@ -54,36 +67,40 @@ Une excellente source sans RSS peut rester active avec un suivi `web`.
 
 ## Illustration
 
-Le magazine doit être richement illustré.
+Le magazine doit être **richement illustré**, y compris dans les formats courts.
 
 Priorité :
 
 1. visuel officiel de l’éditeur ou de la source ;
 2. visuel de campagne Kickstarter/Backerkit ou page produit ;
 3. illustration encyclopédique/licite lorsque pertinente ;
-4. **illustration générée** lorsqu’aucune image source satisfaisante n’existe ou lorsqu’un dossier mérite une direction artistique propre.
+4. **illustration générée** ou illustration éditoriale locale lorsqu’aucune image source satisfaisante n’existe ou lorsqu’un dossier mérite une direction artistique propre.
 
 Exigences :
 
 - une couverture visuellement forte ;
 - au moins une illustration pour chaque article majeur ;
-- vignettes lorsque cela améliore les formats courts ;
+- petites news illustrées par défaut lorsque possible ;
+- vignettes pour podcasts, critiques, buzz et crowdfunding lorsque cela améliore le rythme ;
 - crédit/source de l’image lorsque nécessaire ;
+- assets locaux privilégiés pour les visuels structurants ;
 - vérifier que toute image distante utilisée pour les métadonnées OG répond correctement.
 
 ## Direction artistique
 
-Le rendu doit être **premium, éditorial et adulte**, avec une identité sombre et élégante héritée des numéros précédents mais modernisée.
+Le rendu doit être **premium, éditorial et adulte**, avec une identité sombre et élégante héritée des numéros précédents mais modernisée et plus audacieuse.
 
 Principes :
 
 - hiérarchie typographique forte ;
+- alignements précis ;
 - grandes respirations ;
+- compositions asymétriques possibles ;
 - contraste maîtrisé ;
 - visuels éditoriaux généreux ;
-- composants cohérents ;
+- différenciation réelle entre articles majeurs, petites news, podcasts, agenda et crowdfunding ;
 - excellente lisibilité mobile ;
-- design stable d’un numéro à l’autre.
+- cohérence d’identité sans répétition mécanique de la même grille.
 
 ### Contraintes GitHub Pages
 
@@ -99,10 +116,12 @@ Le site reste statique et compatible GitHub Pages :
 
 Les effets autorisés doivent rester sobres : transitions CSS, micro-interactions, sommaire sticky léger, ancres, révélation discrète au scroll si elle fonctionne sans dépendance lourde.
 
+La contrainte GitHub Pages ne doit jamais justifier un design pauvre : la richesse doit venir de la composition, de la typographie, des illustrations et du rythme de page.
+
 ## Voix de Jasra
 
 Jasra est la rédactrice en chef. Le ton doit être cultivé, vivant, personnel, parfois mordant, jamais plat ni publicitaire.
 
 Les faits doivent rester rigoureux ; les jugements éditoriaux peuvent être assumés lorsqu’ils sont clairement présentés comme tels.
 
-`En Coulisses` doit terminer le numéro avec un vrai regard de Jasra sur la semaine, la veille, les choix et les coulisses techniques.
+`En Coulisses` doit terminer le numéro avec un vrai regard de Jasra sur la semaine, la veille, les choix et les coulisses techniques — sans transformer le reste du magazine en rapport de production.
