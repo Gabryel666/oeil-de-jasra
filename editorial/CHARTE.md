@@ -1,4 +1,4 @@
-# L’Œil de Jasra — Charte éditoriale et visuelle V4.1
+# L’Œil de Jasra — Charte éditoriale et visuelle V5
 
 ## Mission
 
@@ -6,10 +6,12 @@ L’Œil de Jasra est un magazine **hebdomadaire** d’actualité JDR, publié c
 
 ## Densité éditoriale
 
-- Viser **8 000 à 12 000 mots** par numéro hebdomadaire lorsque l’actualité le permet.
+- Viser **10 000 à 14 000 mots** par numéro hebdomadaire lorsque l’actualité le permet.
 - Ne jamais remplir artificiellement : la densité vient de la profondeur, du contexte et de la diversité des sujets.
-- Chaque sujet majeur doit être un vrai article : accroche, contexte, faits, analyse, fermeture.
-- Les formats courts doivent rester développés et sourcés, jamais réduits à une liste de titres.
+- Un numéro standard doit comporter **5 à 7 articles majeurs** développés et **8 à 15 nouvelles du front** supplémentaires, en plus des rubriques podcasts, crowdfunding, critiques, agenda et scène francophone lorsque la matière existe.
+- Les articles majeurs visent généralement **1 200 à 1 800 mots** ; les portraits, focus et critiques visent **800 à 1 200 mots**.
+- Les nouvelles du front ne sont jamais de simples titres : viser **2 à 4 paragraphes utiles** par sujet, avec contexte, fait principal, intérêt pour le lecteur et source identifiable.
+- Chaque sujet majeur doit être un vrai article : accroche, contexte, faits, analyse, conséquences ou implications, fermeture.
 - Toujours privilégier la matière utile : contexte historique, implications, réactions pertinentes, comparaison avec les développements précédents.
 
 ## Règle éditoriale stricte : aucune mécanique interne dans les articles
@@ -80,7 +82,8 @@ Exigences :
 
 - une couverture visuellement forte ;
 - au moins une illustration pour chaque article majeur ;
-- petites news illustrées par défaut lorsque possible ;
+- petites news illustrées par défaut lorsqu’un visuel pertinent existe ou peut être produit sans artifice ;
+- chaque vignette doit être **spécifique au sujet** : éviter de recycler une même illustration pour plusieurs news sans rapport ;
 - vignettes pour podcasts, critiques, buzz et crowdfunding lorsque cela améliore le rythme ;
 - crédit/source de l’image lorsque nécessaire ;
 - assets locaux privilégiés pour les visuels structurants ;
@@ -88,7 +91,7 @@ Exigences :
 
 ## Direction artistique
 
-Le rendu doit être **premium, éditorial et adulte**, avec une identité sombre et élégante héritée des numéros précédents mais modernisée et plus audacieuse.
+Le rendu doit être **premium, éditorial et adulte**, avec une identité sombre, élégante et assumée. La V5 n’est pas une variation prudente des anciens numéros : elle constitue la nouvelle identité de référence du magazine.
 
 Principes :
 
@@ -113,8 +116,6 @@ Le site reste statique et compatible GitHub Pages :
 - aucune dépendance serveur ;
 - éviter les effets lourds, WebGL, animations coûteuses ou frameworks inutiles ;
 - privilégier progressive enhancement, performances, accessibilité et résilience.
-
-Les effets autorisés doivent rester sobres : transitions CSS, micro-interactions, sommaire sticky léger, ancres, révélation discrète au scroll si elle fonctionne sans dépendance lourde.
 
 La contrainte GitHub Pages ne doit jamais justifier un design pauvre : la richesse doit venir de la composition, de la typographie, des illustrations et du rythme de page.
 
