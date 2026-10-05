@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "issue": 3,
+  "publication_date": "2026-10-02",
+  "period": {"from":"2026-09-25","to":"2026-10-01"},
+  "edition_type": "weekly-v4-test",
+  "title": "Project Lamordia, White Wolf reprend la nuit, l’automne sous tension",
+  "deck": "Ravenloft bascule dans le techno-horror, White Wolf reprend en main le World of Darkness, D&D réorganise ses forces, Paizo augmente certains tarifs et The One Ring affole BackerKit.",
+  "cover_image": "https://www.syfy.com/sites/syfy/files/styles/scale_862/public/325454_by-robin-olausson.jpg",
+  "cover_credit": "Illustration de Lamordia, Robin Olausson / Wizards of the Coast, via SYFY",
+  "major_topics": [
+    "Project_Lamordia et l’expérimentation techno-horror de Ravenloft",
+    "Fin du partenariat Renegade / World of Darkness et retour en interne chez White Wolf",
+    "Mouvements chez Wizards : arrivée de Celeste Conowitch, départ de LaTia Jacquise, montée du contenu D&D Beyond",
+    "The One Ring : campagne BackerKit au-delà de 1,8 M$",
+    "Hausse de prix Paizo au 1er octobre",
+    "D&D Beyond October Drop : Shadowfell Secrets et Sorrow Knight",
+    "D&D World of Warcraft : Collector épuisée et montée en puissance avant novembre",
+    "Scène FR : Geek Powa, Rôliskatonic, IND100, La Cellule, Zombiology et D3troit"
+  ],
+  "source_discovery": {
+    "required": true,
+    "candidates_found": ["RPG Magazine", "Rascal News", "TTRPG Insider", "Le Scriptorium", "Livres Jeux", "PTGPTB", "Rôliste TV", "2d6 plus cool"]
+  },
+  "notes": "Premier numéro V4 produit sous ChatGPT. La cadence est rebaselinée sur la semaine du 25 septembre au 1er octobre 2026."
+}

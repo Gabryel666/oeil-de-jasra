@@ -1,11 +1,6 @@
 {
   "schema_version": 1,
-  "policy": {
-    "evolving": true,
-    "discovery_required_each_issue": true,
-    "statuses": ["active", "candidate", "degraded", "rejected"],
-    "note": "Ce registre est vivant. Chaque numéro doit auditer les sources existantes et rechercher de nouvelles sources potentielles."
-  },
+  "policy": {"evolving":true,"discovery_required_each_issue":true,"statuses":["active","candidate","degraded","rejected"],"note":"Registre vivant : chaque numéro audite les sources existantes et recherche de nouvelles sources potentielles."},
   "sources": [
     {"id":"le-fix","name":"Le Fix","url":"https://lefix.di6dent.fr/feed/","type":"rss","category":"fr-news","language":"fr","status":"active"},
     {"id":"legrog","name":"Le GROG","url":"https://www.legrog.org/informations/syndication/accueil","type":"rss","category":"fr-news","language":"fr","status":"active"},
@@ -16,10 +11,8 @@
     {"id":"fjdra","name":"FJdra","url":"https://fjdra.com/rss","type":"rss","category":"fr-news","language":"fr","status":"active"},
     {"id":"audiodidact","name":"Audiodidact","url":"https://audiodidact.fr/rss","type":"rss","category":"fr-news","language":"fr","status":"active"},
     {"id":"ludosphere","name":"Ludosphere","url":"https://ludosphere.fr/?feed=rss2","type":"rss","category":"fr-news","language":"fr","status":"active"},
-
     {"id":"mnemos","name":"Mnémos","url":"https://www.mnemos.com/rss","type":"rss","category":"fr-publisher","language":"fr","status":"active"},
     {"id":"akileos","name":"Akiléos","url":"https://www.akileos.fr/rss","type":"rss","category":"fr-publisher","language":"fr","status":"active"},
-
     {"id":"enworld-forums","name":"EN World (forums)","url":"https://www.enworld.org/forums/-/index.rss","type":"rss","category":"international","language":"en","status":"active"},
     {"id":"enworld-news","name":"EN World News","url":"https://www.enworld.org/ewr-porta/index.rss","type":"rss","category":"international","language":"en","status":"active"},
     {"id":"free-league","name":"Free League","url":"https://freeleaguepublishing.com/feed/","type":"rss","category":"international","language":"en","status":"active"},
@@ -31,14 +24,12 @@
     {"id":"kobold-press","name":"Kobold Press","url":"https://koboldpress.com/feed/","type":"rss","category":"international","language":"en","status":"active"},
     {"id":"wargamer","name":"Wargamer","url":"https://www.wargamer.com/feed/","type":"rss","category":"international","language":"en","status":"active"},
     {"id":"tribality","name":"Tribality","url":"https://www.tribality.com/feed/","type":"rss","category":"international","language":"en","status":"active"},
-
     {"id":"geek-powa-podcasts","name":"Geek Powa Podcasts","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCJGoap50LL07tseuuCC6HAA","type":"youtube","category":"podcast-video","language":"fr","status":"active"},
-    {"id":"la-cellule","name":"La Cellule","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCSZik8DTUb6idR2t9easRBQ","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à valider au premier audit V4."},
-    {"id":"roliskatonic","name":"Rôliskatonic","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCszAVJ6A5mt3eKFN1GIzzow","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à valider au premier audit V4."},
-    {"id":"ind100","name":"Ind100","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCiNjrf7Xv8x0R9u4EI2pgWQ","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à valider au premier audit V4."},
-    {"id":"carter","name":"Carter","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCI2-0NWbGsKeKyferFiLP1A","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à valider au premier audit V4."},
+    {"id":"la-cellule","name":"La Cellule","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCSZik8DTUb6idR2t9easRBQ","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à confirmer via audit."},
+    {"id":"roliskatonic","name":"Rôliskatonic","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCszAVJ6A5mt3eKFN1GIzzow","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à confirmer via audit."},
+    {"id":"ind100","name":"Ind100","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCiNjrf7Xv8x0R9u4EI2pgWQ","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à confirmer via audit."},
+    {"id":"carter","name":"Carter","url":"https://www.youtube.com/feeds/videos.xml?channel_id=UCI2-0NWbGsKeKyferFiLP1A","type":"youtube","category":"podcast-video","language":"fr","status":"active","note":"URL reconstruite à partir du channel_id fourni ; à confirmer via audit."},
     {"id":"chroniques-insectopia","name":"Chroniques d'Insectopia","url":"https://chroniquedinsectopia.lepodcast.fr/feed","type":"podcast","category":"podcast-video","language":"fr","status":"active"},
-
     {"id":"foundry-agone","name":"Agone","url":"https://github.com/Dellatosa/Agone/releases.atom","type":"github-release","category":"foundry","language":"fr","status":"active"},
     {"id":"foundry-wallow-wide","name":"Wallow Wide","url":"https://github.com/Dellatosa/wallow-wide/releases.atom","type":"github-release","category":"foundry","language":"fr","status":"active"},
     {"id":"foundry-expanse-ui","name":"Expanse UI","url":"https://github.com/Dellatosa/expanse-ui/releases.atom","type":"github-release","category":"foundry","language":"en","status":"active"},
@@ -51,6 +42,15 @@
     {"id":"foundry-sra2","name":"SRA2","url":"https://github.com/VincentVk9373/sra2/releases.atom","type":"github-release","category":"foundry","language":"fr","status":"active"},
     {"id":"foundry-custom-system-builder","name":"Custom System Builder","url":"https://gitlab.com/custom-system-builder/custom-system-builder/-/releases.atom","type":"gitlab-release","category":"foundry","language":"en","status":"active"}
   ],
-  "candidates": [],
+  "candidates": [
+    {"id":"rpg-magazine","name":"RPG Magazine","url":"https://rpgmagazine.fr/","type":"web","category":"fr-news","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Couverture quotidienne FR, articles Project Lamordia et crowdfunding ; qualité à confirmer sur plusieurs semaines."},
+    {"id":"rascal-news","name":"Rascal News","url":"https://www.rascal.news/","type":"web","category":"international","language":"en","status":"candidate","discovered_in_issue":3,"reason":"Presse TTRPG indépendante, sujets industrie et politiques créatives."},
+    {"id":"ttrpg-insider","name":"TTRPG Insider","url":"https://www.ttrpginsider.news/","type":"web","category":"international","language":"en","status":"candidate","discovered_in_issue":3,"reason":"Roundups, interviews et mouvements d'industrie."},
+    {"id":"le-scriptorium","name":"Le Scriptorium","url":"https://le-scriptorium.fr/feed/","type":"rss","category":"fr-news","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Flux FR détecté actif fin septembre via Atlas des flux."},
+    {"id":"livres-jeux","name":"Livres Jeux","url":"https://livres-jeux.fr/feed/","type":"rss","category":"fr-news","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Flux FR rôliste détecté et récemment vérifié."},
+    {"id":"ptgptb","name":"PTGPTB","url":"https://ptgptb.fr/rss.xml","type":"rss","category":"fr-essay","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Articles de réflexion JDR pouvant enrichir les dossiers au-delà de la news brute."},
+    {"id":"roliste-tv","name":"Rôliste TV","url":"https://feed.ausha.co/yJRYqcaPGvNg","type":"podcast","category":"podcast-video","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Podcast FR vérifié actif au 30 septembre dans Atlas des flux."},
+    {"id":"2d6-plus-cool","name":"2d6 plus cool","url":"https://2d6pluscool.ovh/index.php/feed/podcast/","type":"podcast","category":"podcast-video","language":"fr","status":"candidate","discovered_in_issue":3,"reason":"Podcast FR détecté avec vérification récente au 1er octobre."}
+  ],
   "rejected": []
 }
