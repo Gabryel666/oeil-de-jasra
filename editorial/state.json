@@ -3,15 +3,16 @@
   "cadence": "weekly",
   "publication_day": "friday",
   "timezone": "Europe/Paris",
-  "last_published_issue": 2,
-  "next_issue": 3,
+  "last_published_issue": 3,
+  "next_issue": 4,
   "last_published_period": {
-    "from": "2026-07-29",
-    "to": "2026-08-11"
+    "from": "2026-09-25",
+    "to": "2026-10-01"
   },
-  "production_status": "building",
-  "current_branch": "jasra/numero-3",
-  "current_issue_started_at": "2026-10-05T18:10:00+02:00",
-  "last_successful_run": null,
-  "notes": "Test V4 retroactif : production du numéro daté vendredi 2 octobre 2026, période éditoriale 25 septembre au 1er octobre. Le trou août-septembre est volontairement non rattrapé afin de rebaseliner la cadence hebdomadaire."
+  "production_status": "idle",
+  "current_branch": null,
+  "current_issue_started_at": null,
+  "last_successful_run": "2026-10-05T18:27:56+02:00",
+  "last_published_url": "https://gabryel666.github.io/oeil-de-jasra/numero-3/",
+  "notes": "Numéro 3 V4 publié avec succès via GitHub Pages. La cadence hebdomadaire repart désormais de la période 25 septembre–1er octobre 2026 ; prochain numéro : 4."
 }
