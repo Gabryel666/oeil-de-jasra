@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "cadence": "weekly",
+  "publication_day": "friday",
+  "timezone": "Europe/Paris",
+  "last_published_issue": 2,
+  "next_issue": 3,
+  "last_published_period": {
+    "from": "2026-07-29",
+    "to": "2026-08-11"
+  },
+  "production_status": "idle",
+  "current_branch": null,
+  "current_issue_started_at": null,
+  "last_successful_run": null,
+  "notes": "V4 ChatGPT. La période du prochain numéro doit repartir de la fin du dernier numéro publié et couvrir l'actualité jusqu'au vendredi de production."
+}
