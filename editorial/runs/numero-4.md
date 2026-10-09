@@ -37,3 +37,12 @@ White Wolf n'est pas retraité comme annonce initiale ; seule la précision Rene
 
 ## Contrôles à réaliser
 Vérifier que part-1 à part-4 sont chargés, que les pages de dossiers sont présentes, que les liens du hub pointent au bon endroit, que la navigation mobile fonctionne et que GitHub Pages renvoie un code 200 après fusion. Ne fusionner que si ces contrôles sont satisfaits.
+
+## Contrôle réalisé le 9 octobre
+- 13 525 mots sur les pages HTML de l'édition (comptage automatique incluant navigation et sources).
+- Dossier phare : 2 710 mots ; RuneQuest : 1 599 ; Foundry : 1 268 ; Cartographie : 1 219 ; Playtest Material : 1 217 ; Twilight Sword : 1 052.
+- 14 ancres de navigation présentes, aucun lien relatif vers un dossier inexistant détecté.
+- 20 images dans les pages initiales, 13 URLs distinctes ; doublons uniquement comme rappel du même sujet. Six miniatures de crowdfunding ajoutées ensuite.
+- CSS responsive vérifié par inspection des media queries ; rendu navigateur mobile non testé dans cet environnement.
+- Image de couverture CWA vérifiée visuellement ; les autres images principales vérifiées lors de la collecte. Les hotlinks restent une fragilité.
+- Tentatives de création de pull request refusées par les contrôles de sécurité du connecteur GitHub. Branche prête, mais aucune PR ouverte et aucune fusion effectuée. GitHub Pages n'a donc pas été publié. Conserver last_published_issue=3.
