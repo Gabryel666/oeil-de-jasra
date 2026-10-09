@@ -9,10 +9,10 @@
     "from": "2026-09-25",
     "to": "2026-10-01"
   },
-  "production_status": "idle",
-  "current_branch": null,
-  "current_issue_started_at": null,
+  "production_status": "review",
+  "current_branch": "jasra/numero-4",
+  "current_issue_started_at": "2026-10-09T08:19:23+02:00",
   "last_successful_run": "2026-10-05T18:27:56+02:00",
   "last_published_url": "https://gabryel666.github.io/oeil-de-jasra/numero-3/",
-  "notes": "Numéro 3 V4 publié avec succès via GitHub Pages. La cadence hebdomadaire repart désormais de la période 25 septembre–1er octobre 2026 ; prochain numéro : 4."
+  "notes": "Numéro 4 en production, ne pas modifier last_published_issue avant validation live."
 }

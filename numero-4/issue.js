@@ -1,1 +1,1 @@
-const x=1;
+const files=['part-1.html','part-2.html','part-3.html','part-4.html'];Promise.all(files.map(async(p,i)=>{const r=await fetch(p);if(!r.ok)throw new Error('HTTP '+r.status);document.getElementById('part'+(i+1)).innerHTML=await r.text()})).then(()=>{if(location.hash)document.querySelector(location.hash)?.scrollIntoView()}).catch(e=>{document.querySelector('main').insertAdjacentHTML('beforeend','<p>Une rubrique n’a pas pu être chargée. Rechargez la page.</p>');console.error(e)});
